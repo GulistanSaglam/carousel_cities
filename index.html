@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" 
+    integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .carousel{
+            height: 1000px;
+        }
+
+        .carousel .carousel-item{
+            width: 400px;
+            height: 800px;
+        }
+
+        .carousel .carousel-item p{
+           text-align: center;
+           color: rgb(78, 122, 122);
+           font-size: 2rem;
+        }
+
+        .carousel .carousel-item img{
+            width: 400px;
+            height: 400px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel">
+        <a href="#one" class="carousel-item">
+            <img src="./cities/barcelona.jpg">
+            <p>Barcelona</p>
+        </a>
+        <a href="#two" class="carousel-item">
+            <img src="./cities/budapest.jpg">
+            <p>Budapest</p>
+        </a>
+        <a href="#three" class="carousel-item">
+            <img src="./cities/korea.jpeg">
+            <p>Korea</p>
+        </a>
+        <a href="#four" class="carousel-item">
+            <img src="./cities/milano.jpeg">
+            <p>Milano</p>
+        </a>
+        <a href="#five" class="carousel-item">
+            <img src="./cities/newyork.jpeg">
+            <p>NewYork</p>
+        </a>
+        <a href="#six" class="carousel-item">
+            <img src="./cities/paris.jpg">
+            <p>Paris</p>
+        </a>
+        <a href="#seven" class="carousel-item">
+            <img src="./cities/prag.jpeg">
+            <p>Prag</p>
+        </a>
+        <a href="#eight" class="carousel-item">
+            <img src="./cities/sydney.jpg">
+            <p>Sydney</p>
+        </a>
+        <a href="#nine" class="carousel-item">
+            <img src="./cities/vancouver.jpg">
+            <p>Vancouver</p>
+        </a>
+        <a href="#ten" class="carousel-item">
+            <img src="./cities/vienna.jpg">
+            <p>Vienna</p>
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" 
+    integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    
+    <script type="text/javascript" defer>
+        $(document).ready(function(){
+           $('.carousel').carousel({
+               indicators: true
+           });
+        });
+    </script>
+</body>
+</html>
